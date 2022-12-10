@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @AtharvaAthanikar2003
-- 👀 I’m interested in C++, Java, Python, HTML, CSS, Javascript, Full Stack And MERN Stack.
-- 🌱 I’m currently learning C++, Java, Python.
+- 👀 I’m interested in C, C++, Java, Python, HTML, CSS, Javascript, Full Stack And MERN Stack.
+- 🌱 I’m currently learning C, C++, Java, Python.
 - 📫 How to reach me ---> Search AtharvaAthanikar2003 Github Repository on Chrome, MS Edge, Firefox.
 
 <!---
