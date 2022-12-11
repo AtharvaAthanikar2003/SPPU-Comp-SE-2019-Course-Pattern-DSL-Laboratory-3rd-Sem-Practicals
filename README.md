@@ -1,4 +1,4 @@
-- SPPU-Comp-SE-2019-Course-Pattern-DSL-Practicals
+# SPPU-Comp-SE-2019-Course-Pattern-DSL-Practicals
 - 👋 Hi, I’m @AtharvaAthanikar2003
 - 👀 I’m interested in C, C++, Java, Python, HTML, CSS, Javascript, Full Stack And MERN Stack.
 - 🌱 I’m currently learning C, C++, Java, Python.
