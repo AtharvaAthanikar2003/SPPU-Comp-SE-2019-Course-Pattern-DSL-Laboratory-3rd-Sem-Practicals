@@ -7,31 +7,33 @@ d) Transpose of a matrix
 '''
 
 import numpy as np
-def get_mat():
-    R = int(input("Enter the number of rows:"))
-    C = int(input("Enter the number of columns:"))
-    matrix = []
-print("Enter the entries row wise:")
-for i in range(R):
-    a = []
-for j in range(C):
-    a.append(int(input()))
-    matrix.append(a)
-    matr = np.array(matrix).reshape(R, C)
-    return matr
-print("Enter the Matrix 1")
-m1 = get_mat()
-print("The Matrix you entered is\n",m1)
-print("\nEnter the Matrix 2")
-m2 = get_mat()
-print("The Matrix you entered is\n",m2)
-print("The addition of the two matrices is : ")
-print(np.add(m1, m2))
-print("The subtraction of the two matrices is : ")
-print(np.subtract(m1, m2))
-print("The product of matrices is : ")
-print(np.dot(m1,m2))
-print("The transpose of given matrix 1 is : ")
-print(m1.transpose())
-print("The transpose of given matrix 2 is : ")
-print(m2.transpose())
+print("For Matrix 1 :- ")
+m=int(input("Enter the number of rows :- "))
+n=int(input("Enter the number of columns :- "))
+print("Enter the elements row-wise :- ")
+matrix1=[];
+for i in range(m):
+    a=[]
+    for j in range(n):
+        v=int(input())
+        a.append(v)
+    matrix1.append(a)
+print(matrix1)
+print("For Matrix 2 :- ")
+m1=int(input("Enter the number of rows :- "))
+n1=int(input("Enter the number of columns :- "))
+print("Enter the elements row-wise :- ")
+matrix2=[];
+for i in range(m1):
+    a1=[]
+    for j in range(n1):
+         v=int(input())
+         a1.append(v)
+    matrix2.append(a1)
+print(matrix2)
+print("Addition of the two matrices is :- ",np.add(matrix1,matrix2))
+print("Subtraction of the two matrices is :- ",np.subtract(matrix1,matrix2))
+print("Multiplication of the two matrices  :- ",np.multiply(matrix1,matrix2))
+print("Division of the two matrices is :- ",np.divide(matrix1,matrix2))
+print("Transpose of Matrix 1 is :- ",np.transpose(matrix1))
+print("Transpose of Matrix 2 is :- ",np.transpose(matrix2))
