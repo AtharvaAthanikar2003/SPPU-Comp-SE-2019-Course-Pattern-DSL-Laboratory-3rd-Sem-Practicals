@@ -93,7 +93,7 @@ while loop:
             marks = int(input(f"Enter marks for student {count}: "))
             listOfStudent.append(marks)
             count+=1
-        print("Select Your Choice From Following list \n1)Average\n2)Maximum\n3)Minimum\n4)Largest Marks Frequency\n5)Minimum Marks Frequency\n6)Count of absent student\n7)Create new list of marks\n8)Exit")
+        print("Select Your Choice From Following list:- \n1)Average Marks\n2)Maximum Marks\n3)Minimum Marks\n4)Maximum Marks Frequency\n5)Minimum Marks Frequency\n6)Count Of Absent Student\n7)Create New List Of Marks\n8)Exit")
     elif choice == "8":
         loop = False
     else:
