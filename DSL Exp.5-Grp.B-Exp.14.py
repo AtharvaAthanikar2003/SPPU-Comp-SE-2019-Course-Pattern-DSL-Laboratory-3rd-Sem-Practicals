@@ -5,6 +5,7 @@ of club or not. Ternary search is modified binary search that divides array into
 instead of two.
 '''
 
+
 def Selection_Sort(marks):
     for i in range(len(marks)):
         min_idx = i
@@ -75,4 +76,3 @@ while flag==1:
         print("\nThat's an Invalid choice!!")
         print("\nThanks for using this program!!")
         flag=0
-
