@@ -5,6 +5,7 @@ of club or not. Ternary search is modified binary search that divides array into
 instead of two.
 '''
 
+
 #task1
 def accept_roll():        #accepting roll no
  roll_no = []
@@ -83,4 +84,3 @@ while f == 1:
  else:
      print("Wrong choice!!!")
      f = 0
-
