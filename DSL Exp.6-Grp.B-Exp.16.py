@@ -20,7 +20,6 @@ def percentage_partition(perc,start,end):
     pivot = perc[start]
     lower_bound = start + 1
     upper_bound = end
-
     while True:
         while lower_bound <= upper_bound and perc[lower_bound] <= pivot:
             lower_bound += 1
@@ -46,14 +45,12 @@ def display_top_five(perc):
         start, stop = len(perc) - 1, -1
     else:
         start, stop = len(perc) - 1, len(perc) - 6
-
     for i in range(start, stop, -1):
         print(perc[i],sep = "\n")
 
 unsorted_percentage = []
 sorted_percentage = []
 flag = 1
-
 while flag == 1:
     print("\n--------------------MENU--------------------")
     print("1. Accept the Percentage of Students")
