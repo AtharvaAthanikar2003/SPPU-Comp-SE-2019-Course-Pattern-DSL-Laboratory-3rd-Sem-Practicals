@@ -4,6 +4,7 @@ made at either end. Obtain a data representation mapping a deque into a onedimen
 delete elements from either end of the deque.
 */
 
+
 #include <iostream>
 #include <stdio.h>
 #define MAX 10
