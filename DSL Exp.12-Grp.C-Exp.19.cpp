@@ -15,15 +15,11 @@ d) Two linked lists exists for two divisions. Concatenate two lists.
 #include <iostream>
 #include <string.h>
 using namespace std;
-
-//Node
 struct node {
 	int prn;
 	string name;
 	struct node *next;
 };
-
-//Linked List
 class list {
 	node *head, *temp;
 	public:
@@ -43,8 +39,6 @@ class list {
 		void concatenate(list A,list B);
 		void op();
 };
-
-//Create
 node* list::create(int val, string n) {
 	temp = new(struct node);
 	if (temp == NULL) {
@@ -57,8 +51,6 @@ node* list::create(int val, string n) {
 		return temp;
 	}
 }
-
-//Insert End
 void list::insertEnd() {
 	int val;
 	string n;
@@ -80,23 +72,21 @@ void list::insertEnd() {
 		cout<<"Element Inserted at Last"<<endl;
 	}
 }
-
-//Insert At
 void list::insertAt(int i) {
 	int val,pos = i - 1,counter = 1;
 	string n;
 	struct node *ptr;
 	struct node *t = head;
-	while ((t -> next) != NULL) {						//loop to count number of items in linked list.
+	while ((t -> next) != NULL) {					
 			t = t -> next;
 			counter++;
 	}
-	t = head;								//traverse pointer is pointed to head again.
-	if (i == 1) {								//equivalent to insert at start.
+	t = head;							
+	if (i == 1) {							
 		insertBeg();
-	} else if (pos > counter || i <= 0) {					//if position is greater than the actual linked list.
+	} else if (pos > counter || i <= 0) {				
 		cout<<"Entered position is out of scope."<<endl;
-	} else {								//insert at required position.
+	} else {							
 		cout<<"Enter PRN: ";
 		cin>>val;
 		cout<<"Enter Name: ";
@@ -111,8 +101,6 @@ void list::insertAt(int i) {
 		cout<<"Member Inserted at Position: "<<i<<endl;
 	}
 }
-
-//Delete At
 void list::deleteAt(int i) {
 	int val,pos = i - 1,counter = 1;
 	string n;
@@ -139,9 +127,6 @@ void list::deleteAt(int i) {
 		delete t;
 		cout<<"Member Deleted at Position: "<<i<<endl;
 	}
-}
-
-//Insert Beg
 void list::insertBeg() {
 	int val;
 	string n;
@@ -161,8 +146,6 @@ void list::insertBeg() {
 		cout<<"We have a New President."<<endl;
 	}
 }
-
-//Display
 void list::display() {
 	temp = head;
 	cout<<"President: ";
@@ -178,8 +161,6 @@ void list::display() {
 	cout<< temp -> prn<<" — "<<temp -> name<<" -> ";
 	cout<<"NULL"<<endl;
 }
-
-//Count
 int list::count() {
 	temp = head;
 	int ct = 0;
@@ -189,8 +170,6 @@ int list::count() {
 	}
 	return ct;
 }
-
-//Concatenate
 void list::concatenate(list A,list B) {
 	struct node * last,*last1;
 	node* t = A.head;
@@ -222,8 +201,6 @@ void list::concatenate(list A,list B) {
 		t = t -> next;
 	}
 	last->next=NULL;
-}
-//Accept
 void list::op() {
 	while(1) {
 		int choice;
@@ -304,8 +281,6 @@ void list::op() {
 		}
 	}
 }
-
-//Reverse Recursion
 void list::rev(node *t) {
 	if(t -> next != NULL) {
 		rev (t -> next);
@@ -317,13 +292,9 @@ void list::rev(node *t) {
 	else
 		cout<<"Member: "<<t -> prn<<" — "<<t -> name<<" -> ";
 }
-
-//Reverse
 void list::reverse() {
 	rev(head);
 }
-
-//Read At
 node* list::readAt(int i) {
 	struct node *t = head;
 	int c = count();
@@ -331,8 +302,6 @@ node* list::readAt(int i) {
 		t = t-> next;
 	}
 }
-
-//Main
 int main() {
 	list L,X,Y;
 	int c;
