@@ -100,7 +100,7 @@ n = int(input("\nEnter number of students who play badminton : "))
 print("Enter the name of",n,"students who play badminton (Please press ENTER after entering each students name) :")
 for i in range(0, n):
     ele = input()
-    Badminton.append(ele)  # adding the element
+    Badminton.append(ele) 
 print("Original list of students playing badminton :" +str(Badminton))
 Badminton=removeDuplicate(Badminton)
 print("The list of students playing badminton after removing duplicates : " +str(Badminton))
@@ -108,11 +108,11 @@ print("The list of students playing badminton after removing duplicates : " +str
 flag=1
 while flag==1:
     print("\n--------------------MENU--------------------\n")
-    print("1. List of students who play both cricket and badminton")
-    print("2. List of students who play either cricket or badminton but not both")
-    print("3. List of students who play neither cricket nor badminton")
-    print("4. Number of students who play cricket and football but not badminton")
-    print("5. Exit\n")
+    print("1.List of students who play both cricket and badminton")
+    print("2.List of students who play either cricket or badminton but not both")
+    print("3.List of students who play neither cricket nor badminton")
+    print("4.Number of students who play cricket and football but not badminton")
+    print("5.Exit\n")
     ch=int(input("Enter your Choice (from 1 to 5) :"))
     if ch==1:
         print("Number of students who play both cricket and badminton : ", CB(Cricket,Badminton))
