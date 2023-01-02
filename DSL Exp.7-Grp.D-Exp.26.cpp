@@ -4,6 +4,7 @@ In any language program mostly syntax error occurs due to unbalancing delimiter 
 parenthesized or not.
 */
 
+
 #include<iostream>
 using namespace std;
 const int MAX=20;
@@ -117,4 +118,3 @@ int main()
     cout<<"Thanks For Using The Program !!!";
     return 0;
 }
-
