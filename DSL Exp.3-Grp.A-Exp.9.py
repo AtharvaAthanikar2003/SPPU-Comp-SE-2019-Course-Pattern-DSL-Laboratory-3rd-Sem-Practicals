@@ -6,6 +6,7 @@ c) Multiplication of two matrices
 d) Transpose of a matrix
 '''
 
+
 import numpy as np
 print("For Matrix 1 :- ")
 m=int(input("Enter the number of rows :- "))
