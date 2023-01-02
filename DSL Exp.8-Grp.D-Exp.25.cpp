@@ -10,6 +10,7 @@ a) To print original string followed by reversed string using stack.
 b) To check whether given string is palindrome or not.
 */
 
+
 #include<iostream>
 #include<string.h>
 #define max 50
